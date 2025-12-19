@@ -1,0 +1,26 @@
+pandas
+numpy
+tqdm
+pillow
+rich
+
+pypdfium2>=4.0.0
+sentence-transformers
+langchain
+langchain-huggingface
+openai
+
+torch
+
+# docling ecosystem
+docling
+docling-core
+
+# OCR support
+easyocr==1.7.2
+pytesseract
+opencv-python
+
+# optional
+# rapidocr-python
+# docling-pdf

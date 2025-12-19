@@ -1,0 +1,23 @@
+# Embedding / data ingestion ---------------------------------------------------
+
+EMBED_DIM: 768                      # type: int | Must match embedding output dim (mpnet-base-v2 -> 768).
+DEFAULT_INPUT_GLOB: "out/sample/*.md"     # type: str | env override: VB_INPUT_GLOB
+DEFAULT_CHUNKS_JSONL: "data/chunks.jsonl"  # type: str | env override: VB_CHUNKS_JSONL
+DEFAULT_INPUT_JSONL: "data/chunks.jsonl"   # type: str | env override: VB_INPUT_JSONL
+DEFAULT_COLLECTION: "docs"          # type: str | env override: VB_COLLECTION
+DEFAULT_QUERY: "What is Hintoken and Hinsent ,please give me in oone line"  # type: str | env override: VB_QUERY
+DEFAULT_EMBED_MODEL: "sentence-transformers/all-mpnet-base-v2"             # type: str | env override: VB_EMBED_MODEL
+FORCED_DEVICE: "cuda"                 # type: null|"cuda"|"cpu" | env override: VB_DEVICE
+
+# LLM runtime ------------------------------------------------------------------
+
+LLM_BASE_URL: " "  # type: str | env override: LLM_BASE_URL
+LLM_API_KEY: " "                   # type: str | env override: LLM_API_KEY
+LLM_MODEL: "openai/gpt-oss-20b"              # type: str | env override: LLM_MODEL
+LLM_TEMPERATURE: 0.7                      # type: float | env override: LLM_TEMPERATURE
+LLM_MAX_TOKENS: 32000                       # type: int | env override: LLM_MAX_TOKENS
+
+# Chat history / feedback ------------------------------------------------------
+
+CONV_ID: "default"               # type: str | env override: VB_CONV_ID
+BRANCH_ID: "main"                # type: str | env override: VB_BRANCH_ID

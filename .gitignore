@@ -1,0 +1,14 @@
+# Python cache
+__pycache__/
+*.pyc
+
+# Virtual environments
+rag_env/
+
+# Data and outputs
+data/
+out/
+*.pdf
+
+# Misc
+=3.0

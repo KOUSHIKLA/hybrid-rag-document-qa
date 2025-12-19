@@ -1,0 +1,25 @@
+# Core ML
+torch>=2.1.0
+sentence-transformers>=2.5.0
+numpy
+scipy
+jsonlines
+pyyaml
+tqdm
+
+# Vector DB + Retrieval
+faiss-cpu
+langchain-huggingface>=0.0.8
+requests
+
+# API Server
+fastapi
+uvicorn
+
+# LLM tools
+transformers
+Pillow
+rich
+
+# Optional: if you use vLLM backend
+vllm
